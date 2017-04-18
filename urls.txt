@@ -1,0 +1,39 @@
+
+##Por posteo-------------------------------------------------------------------------------------------------------------------
+##Resumen de las reacciones
+113144262054871_1259181997451086?fields=reactions.type(LOVE).limit(0).summary(total_count).as(me_encanta),reactions.type(WOW).limit(0).summary(total_count).as(me_sorprende),reactions.type(HAHA).limit(0).summary(total_count).as(me_divierte),reactions.type(ANGRY).limit(0).summary(total_count).as(me_enoja),reactions.type(SAD).limit(0).summary(total_count).as(me_entristece)
+
+##Conteo de los comentarios 
+113144262054871_1259181997451086/comments?summary=total_count
+
+##Conteo de las reacciones
+113144262054871_1259181997451086/reactions?summary=total_count
+
+##Conteo de las reacciones 
+113144262054871_1259181997451086?fields=reactions.limit(0).summary(total_count).as(conteo_reacciones),comments.limit(0).summary(total_count).as(conteo_comentarios),
+shares.as(conteo_shares)
+
+##Por página ------------------------------------------------------------------------------------------------------------------
+113144262054871/posts?fields=id&since=2017-01-01&until=2017-02-01&limit=100
+
+113144262054871/posts?fields=id&since=2017-01-01&until=2017-02-01&limit=25
+
+113144262054871_1259181997451086?fields=reactions.summary(true),comments.summary(true)
+
+
+113144262054871/posts?fields=from,message,created_time,type,link,story,reactions.summary(true),comments.summary(true),shares
+
+113144262054871/feed?fields=from,message,created_time,type,link,story,reactions.summary(true),comments.summary(true),shares
+
+### datos básicos por post
+113144262054871/posts?fields=from,message,created_time,type,link,story,reactions.type(LIKE).limit(0).summary(total_count).as(likes)
+
+113144262054871/posts?fields=from,message,created_time,type,link,reactions.type(LIKE).limit(0).summary(total_count).as(likes)&since=2017-01-01&until=2017-01-02
+
+
+113144262054871/posts?fields=comments.summary(total_count).limit(0)&since=2017-01-01&until=2017-02-20
+
+
+https://graph.facebook.com/v2.8/113144262054871/posts?fields=comments.summary%28total_count%29.limit%280%29&format=json&access_token=
+
+

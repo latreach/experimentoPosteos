@@ -1,0 +1,7 @@
+.tex.backup
+.aux
+.log
+.out
+.py.swp
+.R.swp
+
